@@ -27,10 +27,10 @@ interface IgorService {
    * Because of this, always put the job name at the end of the URL.
    */
 
-  @GET('/masters')
+  @GET('/v3/masters')
   List<String> getBuildMasters()
 
-  @GET('/jobs/{buildMaster}')
+  @GET('/v3/jobs/{buildMaster}')
   List<String> getJobsForBuildMaster(@Path("buildMaster") String buildMaster)
 
   @GET('/jobs/{buildMaster}/{job}')

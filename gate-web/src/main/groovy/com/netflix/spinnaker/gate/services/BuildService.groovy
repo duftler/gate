@@ -41,7 +41,7 @@ class BuildService {
     return UriUtils.encodeFragment(uri.toString(), "UTF-8")
   }
 
-  List<String> getBuildMasters() {
+  List<Object> getBuildMasters() {
     if (!igorService) {
       return []
     }

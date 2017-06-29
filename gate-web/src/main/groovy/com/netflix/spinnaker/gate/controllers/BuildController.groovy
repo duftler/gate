@@ -38,7 +38,7 @@ class BuildController {
   BuildService buildService
 
   @RequestMapping(value = "v2/builds", method = RequestMethod.GET)
-  List<String> getBuildMasters() {
+  List<Object> getBuildMasters() {
     buildService.getBuildMasters()
   }
 

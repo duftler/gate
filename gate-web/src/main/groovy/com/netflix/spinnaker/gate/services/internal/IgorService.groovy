@@ -28,7 +28,7 @@ interface IgorService {
    */
 
   @GET('/v3/masters')
-  List<String> getBuildMasters()
+  List<Object> getBuildMasters()
 
   @GET('/v3/jobs/{buildMaster}')
   List<String> getJobsForBuildMaster(@Path("buildMaster") String buildMaster)
